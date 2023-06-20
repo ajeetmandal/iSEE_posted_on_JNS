@@ -26,9 +26,9 @@ options(timeout=3600)
 #sce_small <- readRDS("sce_dlpfc_sgacc_final.RDS")
 
 # FigShare (DietSuerat)
-#dat <- ("https://figshare.com/ndownloader/files/40209820/sce_dlpfc_sgacc_final_DietSuerat.RDS")
-#download.file(dat, destfile = "sce_dlpfc_sgacc_final_DietSuerat.RDS")
-#sce_small <- readRDS("sce_dlpfc_sgacc_final_DietSuerat.RDS")
+dat <- ("https://figshare.com/ndownloader/files/40209820/sce_dlpfc_sgacc_final_DietSuerat.RDS")
+download.file(dat, destfile = "sce_dlpfc_sgacc_final_DietSuerat.RDS")
+sce_small <- readRDS("sce_dlpfc_sgacc_final_DietSuerat.RDS")
 
 # MendeleyData (regular sce)
 #dat <- ("https://data.mendeley.com/public-files/datasets/4pmcfgy9ss/files/9ffd5deb-c555-496d-8f2c-b3728cdc54d1/file_downloaded")
@@ -41,7 +41,7 @@ options(timeout=3600)
 #sce_small <- readRDS("sce_small_dietSeu_sce_dlpfc_sgacc_final.RDS")
 
 # Read datafile from as Git LFS object file
-sce_small <- readRDS("sce_small_dietSeu_sce_dlpfc_sgacc_final.RDS")
+#sce_small <- readRDS("sce_small_dietSeu_sce_dlpfc_sgacc_final.RDS")
 
 # Tour file
 tour <- read.delim("tour.txt", sep=";", stringsAsFactors = FALSE, row.names = NULL)
